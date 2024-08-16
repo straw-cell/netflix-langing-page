@@ -1,1 +1,6 @@
-/*# sourceMappingURL=style.css.map */
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: red;
+}/*# sourceMappingURL=style.css.map */
