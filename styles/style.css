@@ -1,6 +1,50 @@
+.header {
+  position: absolute;
+  top: 30px;
+  z-index: 3;
+}
 .header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: red;
+}
+.header .header-container .logo {
+  height: 40px;
+}
+.header .header-container .logo img {
+  height: 100%;
+}
+.header .header-container .btns select {
+  background: var(--glass);
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../img/header-image.png");
+  position: relative;
+}
+.hero::after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  position: absolute;
+  top: 0;
+}
+.hero .hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.hero .hero-container h1 {
+  font-size: 48px;
+}
+.hero .hero-container p {
+  font-size: 24px;
+}
+.hero .hero-container .email {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
