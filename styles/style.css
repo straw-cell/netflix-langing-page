@@ -47,4 +47,106 @@
 }
 .hero .hero-container .email {
   display: flex;
+}
+.features {
+  height: 700px;
+  background: var(--black);
+  margin-top: 10px;
+}
+.features:nth-child(even) .features-container {
+  flex-direction: row-reverse;
+}
+.features .features-container {
+  display: flex;
+}
+.features .features-container .left {
+  height: 100%;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.features .features-container .left h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 48px;
+}
+.features .features-container .left p {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 24px;
+  margin-top: 16px;
+}
+.features .features-container .right {
+  height: 100%;
+  width: 50%;
+}
+
+.faq-parent {
+  height: 100%;
+  background: var(--black);
+  margin-top: 10px;
+}
+.faq-parent .faq-container {
+  padding: 50px 0;
+}
+.faq-parent .faq-container h2 {
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
+.faq-parent .faq-container .faq-box {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-parent .faq-container .faq-box .faq {
+  min-height: 90px;
+  width: 100%;
+  background: var(--grey);
+  overflow: hidden;
+}
+.faq-parent .faq-container .faq-box .faq.active .faq-que .icon {
+  transform: rotate(45deg);
+}
+.faq-parent .faq-container .faq-box .faq.active .faq-ans {
+  display: block;
+}
+.faq-parent .faq-container .faq-box .faq .faq-que {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.faq-parent .faq-container .faq-box .faq .faq-que:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.faq-parent .faq-container .faq-box .faq .faq-que .icon {
+  height: 30px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.faq-parent .faq-container .faq-box .faq .faq-que .icon span {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+.faq-parent .faq-container .faq-box .faq .faq-que .icon span:nth-child(2) {
+  transform: translateY(-50%) rotate(90deg);
+}
+.faq-parent .faq-container .faq-box .faq .faq-ans {
+  padding: 20px;
+  border-top: 1px solid black;
+  display: none;
 }/*# sourceMappingURL=style.css.map */
